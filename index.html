@@ -1,276 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Atharv Yadav - Unity Game Programmer Portfolio">
-    <title>Atharv Yadav | Unity Game Programmer</title>
-    
-    <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome & Devicon for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atharv Yadav — Game Programmer | Unity</title>
+  <meta name="description" content="Portfolio of Atharv Yadav, a Unity game programmer focused on interactive mechanics, clean C# architecture, and optimized gameplay systems.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Atharv Yadav — Game Programmer | Unity">
+  <meta property="og:description" content="Portfolio of Atharv Yadav, a Unity game programmer focused on interactive mechanics, clean C# architecture, and optimized gameplay systems.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+  <meta property="og:url" content="https://hash-atharv.github.io/">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header id="header">
-        <nav class="container">
-            <a href="#home" class="logo" aria-label="Home">AY<span>.</span></a>
-            
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-bg-animated"></div>
-            <div class="container hero-content">
-                <div class="hero-text fade-in-section">
-                    <p class="greeting">Hi, I am</p>
-                    <h1 class="name">Atharv Yadav</h1>
-                    <h2 class="title">
-                        <span class="static-title">Unity Game Programmer</span>
-                        <span class="typing-container">
-                            <span id="typing-text"></span><span class="cursor">|</span>
-                        </span>
-                    </h2>
-                    <p class="intro">
-                        Bridging the gap between game design and technical implementation. I build dynamic, interactive worlds and robust gameplay mechanics.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                        <a href="assets/resume.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-download"></i> Resume
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="hero-graphic fade-in-section">
-                    <!-- Placeholder for Hero Illustration/Graphic -->
-                    <div class="floating-element">
-                        <i class="devicon-unity-original"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <!-- ==================== Header / Nav ==================== -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">AY</span>
+        Atharv Yadav
+      </a>
 
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title fade-in-section">About Me</h2>
-                <div class="about-grid fade-in-section">
-                    <div class="about-text">
-                        <p>
-                            I'm a Unity Game Developer passionate about bringing creative ideas to life through intuitive gameplay. With solid expertise in C# and Unity engine mechanics, I build dynamic, interactive worlds that players love to explore. 
-                        </p>
-                        <p>
-                            I enjoy bridging the gap between game design and technical implementation to ensure every feature feels polished and responsive. Whether prototyping new mechanics or squashing final bugs, I thrive on crafting memorable gaming experiences.
-                        </p>
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat-card">
-                            <i class="fa-solid fa-clock stat-icon"></i>
-                            <h3>1.5 Years</h3>
-                            <p>Experience</p>
-                        </div>
-                        <div class="stat-card">
-                            <i class="fa-solid fa-location-dot stat-icon"></i>
-                            <h3>Location</h3>
-                            <p>Navi Mumbai, India</p>
-                        </div>
-                        <div class="stat-card full-width">
-                            <i class="fa-solid fa-gamepad stat-icon"></i>
-                            <h3>Specialization</h3>
-                            <p>Unity Development • Gameplay Programming • Game Systems • AI • UI Programming</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section alt-bg">
-            <div class="container">
-                <h2 class="section-title fade-in-section">Technical Skills</h2>
-                <div class="skills-grid fade-in-section">
-                    
-                    <div class="skill-card">
-                        <i class="devicon-unity-original skill-icon"></i>
-                        <h3>Unity</h3>
-                        <p>Game Engine</p>
-                    </div>
-                    
-                    <div class="skill-card">
-                        <i class="devicon-csharp-plain skill-icon"></i>
-                        <h3>C#</h3>
-                        <p>Core Programming</p>
-                    </div>
+      <ul class="nav-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-                    <div class="skill-card">
-                        <i class="fa-solid fa-layer-group skill-icon"></i>
-                        <h3>Unity UI</h3>
-                        <p>Interface Dev</p>
-                    </div>
+  <main>
+    <!-- ==================== Hero ==================== -->
+    <section class="hero dot-grid">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="hero-eyebrow"><span class="dot"></span>available for opportunities</p>
+          <h1>Atharv Yadav</h1>
+          <p class="hero-role">Game Programmer &nbsp;·&nbsp; Unity</p>
+          <p class="hero-tagline">
+            Dedicated to interactive mechanics and AI-driven development —
+            writing clean, scalable C# to deliver optimized gaming experiences.
+          </p>
 
-                    <div class="skill-card">
-                        <i class="fa-solid fa-person-running skill-icon"></i>
-                        <h3>Animation</h3>
-                        <p>State Machines</p>
-                    </div>
+          <div class="btn-row">
+            <a href="projects.html" class="btn btn--primary">View Projects</a>
+            <a href="assets/resume.pdf" class="btn btn--ghost" download>Download Resume</a>
+          </div>
 
-                    <div class="skill-card">
-                        <i class="fa-solid fa-brain skill-icon"></i>
-                        <h3>AI</h3>
-                        <p>Game AI & Behaviors</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <i class="devicon-github-original skill-icon"></i>
-                        <h3>GitHub</h3>
-                        <p>Version Control</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="section">
-            <div class="container">
-                <h2 class="section-title fade-in-section">Experience</h2>
-                <div class="timeline fade-in-section">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Unity Game Development</h3>
-                            <span class="timeline-duration"><i class="fa-regular fa-calendar"></i> 1.5 Years Total</span>
-                            <span class="timeline-type">1 Year Learning Experience | Student Projects</span>
-                            <p>Worked on multiple Unity-based academic and personal projects while building strong foundations in gameplay programming, UI implementation, debugging, AI systems, and interactive mechanics.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section alt-bg">
-            <div class="container">
-                <h2 class="section-title fade-in-section">Featured Projects</h2>
-                <div class="projects-grid fade-in-section">
-                    
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <div class="project-img-wrapper">
-                            <!-- Placeholder image: Replace src with actual asset path like 'assets/images/project1.jpg' -->
-                            <img src="https://placehold.co/600x400/1F2937/38BDF8?text=Roguelite+Shooter" alt="Roguelite Shooter Gameplay" class="project-img" loading="lazy">
-                        </div>
-                        <div class="project-info">
-                            <h3>Roguelite Shooter</h3>
-                            <span class="project-subtitle">Student Group Project</span>
-                            <p class="project-desc">A dynamic top-down roguelite shooter featuring procedural enemy spawning, weapon upgrade systems, and challenging boss fights.</p>
-                            <div class="project-contributions">
-                                <strong>My Contributions:</strong> Core gameplay loop, AI state machines, weapon systems, and UI integration.
-                            </div>
-                            <div class="tech-stack">
-                                <span>Unity</span>
-                                <span>C#</span>
-                                <span>AI</span>
-                                <span>Animation</span>
-                                <span>Unity UI</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
-                                <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-play"></i> Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="section">
-            <div class="container">
-                <h2 class="section-title fade-in-section">Education</h2>
-                <div class="education-card fade-in-section">
-                    <div class="edu-icon">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <div class="edu-info">
-                        <h3>Diploma in Game Programming in Unity</h3>
-                        <h4>G2M</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section alt-bg">
-            <div class="container">
-                <h2 class="section-title fade-in-section">Get In Touch</h2>
-                <div class="contact-grid fade-in-section">
-                    
-                    <a href="mailto:theatharv11@gmail.com" class="contact-card">
-                        <i class="fa-solid fa-envelope contact-icon"></i>
-                        <h3>Email</h3>
-                        <p>theatharv11@gmail.com</p>
-                    </a>
-
-                    <a href="https://github.com/hash-atharv" target="_blank" rel="noopener noreferrer" class="contact-card">
-                        <i class="fa-brands fa-github contact-icon"></i>
-                        <h3>GitHub</h3>
-                        <p>github.com/hash-atharv</p>
-                    </a>
-
-                    <div class="contact-card">
-                        <i class="fa-solid fa-location-dot contact-icon"></i>
-                        <h3>Location</h3>
-                        <p>Navi Mumbai, Maharashtra, India</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-socials">
-                <a href="mailto:theatharv11@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://github.com/hash-atharv" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            </div>
-            <p>&copy; 2026 Atharv Yadav. All rights reserved.</p>
-            <p class="footer-tech">Built using HTML, CSS & JavaScript</p>
+          <div class="social-row">
+            <a class="icon-btn" href="https://www.linkedin.com/in/atharv-yadav-999a25340/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6.94 6.5a1.94 1.94 0 1 1 0-3.88 1.94 1.94 0 0 1 0 3.88zM4.75 8.75h4.38V20H4.75V8.75zM13.5 8.75h4.2v1.54h.06c.58-1.1 2-2.26 4.12-2.26 4.4 0 5.22 2.9 5.22 6.66V20h-4.38v-5.4c0-1.29-.02-2.94-1.79-2.94-1.8 0-2.08 1.4-2.08 2.85V20H13.5V8.75z"/></svg>
+            </a>
+            <a class="icon-btn" href="https://github.com/hash-atharv" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.9-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+            </a>
+          </div>
         </div>
-        <button id="back-to-top" aria-label="Back to top">
-            <i class="fa-solid fa-arrow-up"></i>
-        </button>
-    </footer>
 
-    <!-- Custom JS -->
-    <script src="script.js"></script>
+        <div class="hero-photo-wrap reveal">
+          <div class="hero-photo bracket-frame">
+            <img src="assets/images/profile.jpg" alt="Portrait of Atharv Yadav">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Quick intro strip ==================== -->
+    <section class="section section--tight">
+      <div class="container reveal">
+        <p class="eyebrow">currently</p>
+        <h2 class="section-title">Building systems players don't notice — until they'd miss them.</h2>
+        <p class="section-lede">
+          Right now that means reward loops, audio systems, and shader work for
+          <strong style="color: var(--text);">Chromatic Breach</strong>, a roguelite shooter built in Unity.
+          Studying Electronics &amp; Computer Science at Pillai College of Engineering, and sharpening
+          Unity fundamentals through Gamer2Maker's game programming track.
+        </p>
+        <div class="btn-row" style="margin-top: 24px;">
+          <a href="about.html" class="btn btn--ghost">More about me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-note">© Atharv Yadav <span data-year>2026</span> — built with plain HTML, CSS &amp; JS.</p>
+      <div class="footer-social">
+        <a class="icon-btn" href="https://www.linkedin.com/in/atharv-yadav-999a25340/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6.94 6.5a1.94 1.94 0 1 1 0-3.88 1.94 1.94 0 0 1 0 3.88zM4.75 8.75h4.38V20H4.75V8.75zM13.5 8.75h4.2v1.54h.06c.58-1.1 2-2.26 4.12-2.26 4.4 0 5.22 2.9 5.22 6.66V20h-4.38v-5.4c0-1.29-.02-2.94-1.79-2.94-1.8 0-2.08 1.4-2.08 2.85V20H13.5V8.75z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://github.com/hash-atharv" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.9-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+        </a>
+        <a class="icon-btn" href="mailto:theatharv11@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3.5 5.5h17a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-17a1 1 0 0 1-1-1v-11a1 1 0 0 1 1-1z"/><path d="M3 6.5l9 6.5 9-6.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
